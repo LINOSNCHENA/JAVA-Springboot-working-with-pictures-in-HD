@@ -17,14 +17,14 @@ public class myApplication {
 @Bean
     public TomcatServletWebServerFactory containerFactory() {
         return new TomcatServletWebServerFactory() {
-            protected void customizeConnector(Connector connector) {
+            protected void customizeConnector(Connector myConnector) {
                 int maxSize = 5000*5000*5000;
-                super.customizeConnector(connector);
-                connector.setMaxPostSize(maxSize);
-                connector.setMaxSavePostSize(maxSize);
+                super.customizeConnector(myConnector);
+                 myConnector.setMaxPostSize(maxSize);
+                myConnector.setMaxSavePostSize(maxSize);
 
-                if (connector.getProtocolHandler() instanceof AbstractHttp11Protocol) {
-                    ((AbstractHttp11Protocol <?>) connector.getProtocolHandler()).setMaxSwallowSize(maxSize);
+                if (myConnector.getProtocolHandler() instanceof AbstractHttp11Protocol) {
+                    ((AbstractHttp11Protocol <?>) myConnector.getProtocolHandler()).setMaxSwallowSize(maxSize);
                     logger.info("Set MaxSwallowSize "+ maxSize);
                 }
             }
