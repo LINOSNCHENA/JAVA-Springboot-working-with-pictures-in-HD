@@ -18,7 +18,7 @@ public class myApplication {
     public TomcatServletWebServerFactory containerFactory() {
         return new TomcatServletWebServerFactory() {
             protected void customizeConnector(Connector connector) {
-                int maxSize = 50000000;
+                int maxSize = 5000*5000*5000;
                 super.customizeConnector(connector);
                 connector.setMaxPostSize(maxSize);
                 connector.setMaxSavePostSize(maxSize);
