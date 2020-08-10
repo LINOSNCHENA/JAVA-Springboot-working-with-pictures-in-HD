@@ -2,11 +2,20 @@
 
 Import the project to the IDE of your choosing as a Maven project.
  
+## Technology stack in Java
+1. chocolate
+2. Tomcat
+3. Maven
+4. Java version: 12.0.2
+
+
 ## Run application
 
-To run the application in development time, enter the following Maven command:  
+To run the application in development mode, enter the following maven command:  
 ```
+mvn clean package
 mvn spring-boot:run
+
 ```
 
-Open [http://localhost:8080/](http://localhost:8080/) in browser to see the application.
+Open [http://localhost:8081/](http://localhost:8081/) in browser to see the application.
