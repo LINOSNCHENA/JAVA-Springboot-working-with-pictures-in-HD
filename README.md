@@ -8,11 +8,14 @@ Import the project to the IDE of your choosing as a Maven project.
 3. Maven
 4. Java version: 12.0.2
 
+## Organizations
+1. Create aroot directory called "zTransferDB"
+
 
 ## Run application
 
 To run the application in development mode, enter the following maven command: 
- 
+
 ```
 mvn clean package
 mvn spring-boot:run

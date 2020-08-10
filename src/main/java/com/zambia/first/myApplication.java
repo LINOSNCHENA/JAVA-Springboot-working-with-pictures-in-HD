@@ -12,22 +12,21 @@ public class myApplication {
     public static void main(String[] args) {
         SpringApplication.run(myApplication.class, args);
     }
-    
 
-@Bean
+    @Bean
     public TomcatServletWebServerFactory containerFactory() {
         return new TomcatServletWebServerFactory() {
             protected void customizeConnector(Connector myConnector) {
-                int maxSize = 5000*5000*5000;
+                int maxSize = 5000 * 5000 * 5000;
                 super.customizeConnector(myConnector);
-                 myConnector.setMaxPostSize(maxSize);
+                myConnector.setMaxPostSize(maxSize);
                 myConnector.setMaxSavePostSize(maxSize);
 
                 if (myConnector.getProtocolHandler() instanceof AbstractHttp11Protocol) {
-                    ((AbstractHttp11Protocol <?>) myConnector.getProtocolHandler()).setMaxSwallowSize(maxSize);
-                    logger.info("Set MaxSwallowSize "+ maxSize);
+                    ((AbstractHttp11Protocol<?>) myConnector.getProtocolHandler()).setMaxSwallowSize(maxSize);
+                    logger.info("Set MaxSwallowSize " + maxSize);
                 }
             }
         };
-    }   
+    }
 }
