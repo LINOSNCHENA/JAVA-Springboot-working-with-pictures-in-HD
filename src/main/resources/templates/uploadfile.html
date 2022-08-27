@@ -14,14 +14,26 @@
         <input type="submit" width="220" style="width: 150px;" value="Submit" />
         <br /><br />
         <h2>HTML img src Attribute required in PembaX1</h2>
-        <img src="smiley.gif" alt="Smiley face" width="142" height="142"><br>
+        <h2>HTML img src Attribute required in PembaX1</h2>
 
-        <img src="C://zTransferDB//pembaX1.png" alt="Second face" width="142" height="142">
 
+        <img src="./pages1.png"></br>
+        <img src="./static/images/pages2.png"></br>
+        <img src="images/pages2.png"></br>
+        <img src="/images/pages2.png"></br>
+        <img th:src="@{/images/pages2.png}"></br>
+
+        <img th:src="@{images/page2.png}" />
+        <img src="../static/images/pages2.png" width="1000" th:src="@{images/page2.png}"/>
+
+
+        <img src="./page2.png" alt="Smiley face1" width="142" height="142"><br>
+        <img src="smiley.gif" alt="Smiley face2" width="142" height="142"><br>
+        <img src="C://zTransferDB//pembaX1.png" alt="Second face3" width="142" height="142">
         <img src="https://github.com/LINOSNCHENA/Working-with-pictures-in-HD/blob/master/dpUX/cobe1.png"
             alt="Student logo">
-        <img src="file:/C:/zTransferDB//pembaX2.png" alt="Site Logo" width="50" height="50">
-        <img src="file:/C:/zTransferDB//pembaX3.png" alt="Site Logo" width="50" height="50">
+        <img src="file:page1.png" alt="Site Logo4" width="50" height="50">
+        <img src="file: page2.png" alt="Site Logo5" width="50" height="50">
 
     </form>
 

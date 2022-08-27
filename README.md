@@ -9,7 +9,7 @@ Import the project to the IDE of your choosing as a Maven project.
 4. Java version: 12.0.2
 
 ## Organizations
-1. Create aroot directory called "zTransferDB"
+1. Create aroot directory called "LocalDB"
 
 
 ## Run application

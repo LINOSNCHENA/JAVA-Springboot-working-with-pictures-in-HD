@@ -15,7 +15,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 public class UploadController {
 
-    private static String UPLOADED_FOLDER = "C://DBofPictures//";
+    private static String UPLOADED_FOLDER = "C://LOCALDB//";
 
     // ------------------------------------------------------------------------------------
     // INTRODUCTION
