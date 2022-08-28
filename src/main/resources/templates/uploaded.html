@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <body>
+    <div class="coverX">
 
-<h1> Upload you student identity Photo - Upload Status</h1>
+<h1> Upload you student identity Photo - Upload Green Status</h1>
 
 <div th:if="${message}">
     <h2 th:text="${message}"/>
 </div>
+<p>
+    <img th:src="@{images/page1.jpg}" width="150" height="150"> <br>
+    <img th:src="@{images/page3.png}" width="350" height="250"> <br>
+</p>
 
+<br>
+<br>
+<br>
+<form  action="/" >
+    <button type="submit"> Go Back to Home</button>
+</form>
+<br>
+</div>
 </body>
+
 </html>
+<style>
+    .coverX{
+        width: 85%;
+        padding: 10px;
+        background: #a9f953;
+        text-align: center;
+        margin: 0 auto;
+        border: 3px solid #f97200;
+        color: rgb(4, 6, 14);
+    }
+    </style>
+

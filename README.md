@@ -22,4 +22,19 @@ mvn spring-boot:run
 
 ```
 
-Open [http://localhost:8081/](http://localhost:8081/) in browser to see the application.
+## Routes- View-UPLOADED
+http://localhost:8081/
+
+Below are screen shots from the application's output
+
+![ M#1 ](https://github.com/LINOSNCHENA/JAVA-Springboot-working-with-pictures-in-DB/blob/master/UXViews/page1.png)
+![ M#2 ](https://github.com/LINOSNCHENA/JAVA-Springboot-working-with-pictures-in-DB/blob/master/UXViews/page2.png)
+
+
+## Lecture #15
+
+```
+28/08/2022
+
+```
+# END

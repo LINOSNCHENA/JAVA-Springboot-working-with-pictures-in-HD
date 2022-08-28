@@ -2,44 +2,47 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <body>
+    <div class="coverX">
 
-    <h1> Upload you student identity Photo - Insert your pictureX1</h1>
+    <h1> Upload you student identity Photo - Insert your blue picture below</h1>
 
-    <h4> Instructions:- Picture is of passport-type specificationX2</h4>
+    <h4> Instructions:- Picture is of passport-type specification</h4>
     <br>
 
     <form method="POST" action="/uploadfile" enctype="multipart/form-data">
-        <input type="file" width="220" style="width: 150px;" name="file" />
+        <input type="file" width="420" style="width: 170px;" name="file" />
         <br /><br />
-        <input type="submit" width="220" style="width: 150px;" value="Submit" />
-        <br /><br />
-        <h2>HTML img src Attribute required in PembaX1</h2>
-        <h2>HTML img src Attribute required in PembaX1</h2>
+        <input type="submit" width="420" style="width: 150px;" value="Submit" />
+        <br /><br />  
+        <h2>Some pictures and their img src Attribute required in your photo</h2> 
 
+        <img th:src="@{images/page2.png}" width="250" height="150"> <br>
+        <img src="https://github.com/LINOSNCHENA/JAVA-Springboot-working-with-pictures-in-DB/blob/master/UXViews/page1.png"
+            alt="Student logo" width="150" height="50">     
 
-        <img src="./pages1.png"></br>
-        <img src="./static/images/pages2.png"></br>
-        <img src="images/pages2.png"></br>
-        <img src="/images/pages2.png"></br>
-        <img th:src="@{/images/pages2.png}"></br>
-
-        <img th:src="@{images/page2.png}" />
-        <img src="../static/images/pages2.png" width="1000" th:src="@{images/page2.png}"/>
-
-
-        <img src="./page2.png" alt="Smiley face1" width="142" height="142"><br>
-        <img src="smiley.gif" alt="Smiley face2" width="142" height="142"><br>
-        <img src="C://zTransferDB//pembaX1.png" alt="Second face3" width="142" height="142">
-        <img src="https://github.com/LINOSNCHENA/Working-with-pictures-in-HD/blob/master/dpUX/cobe1.png"
-            alt="Student logo">
-        <img src="file:page1.png" alt="Site Logo4" width="50" height="50">
-        <img src="file: page2.png" alt="Site Logo5" width="50" height="50">
+  
+    
 
     </form>
-
+    <p>
+        <img th:src="@{images/page1.jpg}" width="150" height="150"> <br>
+        <img th:src="@{images/page3.png}" width="350" height="250"> <br>
+    </p>
     <br>
     <h4> Instructions:- Make sure the picture is of passport-type specification</h4>
     <br>
+    </div>
 </body>
 
+<style>
+.coverX{
+	width: 85%;
+    padding: 10px;
+    background: #5390f9;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid #f97200;
+    color: rgb(4, 6, 14);
+}
+</style>
 </html>
