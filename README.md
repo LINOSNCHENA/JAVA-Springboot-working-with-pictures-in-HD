@@ -27,8 +27,9 @@ http://localhost:8081/
 
 Below are screen shots from the application's output
 
-![ M#1 ](https://github.com/LINOSNCHENA/JAVA-Springboot-working-with-pictures-in-DB/blob/master/UXViews/page1.png)
-![ M#2 ](https://github.com/LINOSNCHENA/JAVA-Springboot-working-with-pictures-in-DB/blob/master/UXViews/page2.png)
+![ M#1 ](https://github.com/LINOSNCHENA/JAVA-Springboot-working-with-pictures-in-HD/blob/master/UXVIEWS/page1.png)
+![ M#2 ](https://github.com/LINOSNCHENA/JAVA-Springboot-working-with-pictures-in-HD/blob/master/UXVIEWS/page2.png)
+![ M#3 ](https://github.com/LINOSNCHENA/JAVA-Springboot-working-with-pictures-in-HD/blob/master/UXVIEWS/page3.png)
 
 
 ## Lecture #15
